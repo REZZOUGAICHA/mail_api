@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #1C9E97;
+            color: #fff;
+            padding: 10px 0;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .content {
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Payment Successful</h1>
+        </div>
+        <div class="content">
+            <p>Votre paiement a été effectué avec succès.</p>
+            <p><strong>Order Number:</strong> {{ order_number }}</p>
+            <p><strong>Amount:</strong> {{ amount }} {{ currency }}</p>
+            <p><strong>Authorization Code:</strong> {{ auth_code }}</p>
+            <p><strong>Cardholder Name:</strong> {{ cardholder_name }}</p>
+            <p><strong>Order Status:</strong> {{ order_status }}</p>
+            <p><strong>Error Message:</strong> {{ error_message }}</p>
+            <p><strong>Action Code:</strong> {{ action_code }}</p>
+            <p><strong>Action Code Description:</strong> {{ action_code_description }}</p>
+            <p><strong>Expiration:</strong> {{ expiration }}</p>
+            <p><strong>Deposit Amount:</strong> {{ deposit_amount }}</p>
+            <p><strong>IP Address:</strong> {{ ip }}</p>
+            <p><strong>Card Number (Masked):</strong> {{ pan }}</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 ANAE. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
